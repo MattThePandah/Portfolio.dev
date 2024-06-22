@@ -22,6 +22,7 @@ module.exports = {
     tsconfigRootDir: __dirname,
   },
   rules: {
+    "endOfLine":0,
     'prettier/prettier': 'error',
     'react/react-in-jsx-scope': 'off',
     'jsx-a11y/anchor-is-valid': [
