@@ -25,8 +25,21 @@ module.exports = {
         sans: ['var(--font-space-grotesk)', ...fontFamily.sans],
       },
       colors: {
-        primary: colors.pink,
+        primary: {
+          DEFAULT: 'hsl(var(--primary))',
+          400: 'hsl(var(--primary))',
+          500: 'hsl(var(--primary))',
+          600: 'hsl(var(--primary))',
+          foreground: 'hsl(var(--primary-foreground))',
+        },
         gray: colors.gray,
+        border: 'hsl(var(--border))',
+        background: 'hsl(var(--background))',
+        foreground: 'hsl(var(--foreground))',
+        muted: {
+          DEFAULT: 'hsl(var(--muted))',
+          foreground: 'hsl(var(--muted-foreground))',
+        },
       },
       typography: ({ theme }) => ({
         DEFAULT: {
@@ -46,7 +59,7 @@ module.exports = {
               fontWeight: '600',
             },
             code: {
-              color: theme('colors.indigo.500'),
+              color: theme('colors.blue.500'),
             },
           },
         },
@@ -67,5 +80,9 @@ module.exports = {
       }),
     },
   },
-  plugins: [require('@tailwindcss/forms'), require('@tailwindcss/typography')],
+  plugins: [
+    require('@tailwindcss/forms'), 
+    require('@tailwindcss/typography'),
+    require('tailwindcss-animate')
+  ],
 }
