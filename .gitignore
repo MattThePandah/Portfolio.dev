@@ -42,7 +42,21 @@ yarn-error.log*
 .env.development.local
 .env.test.local
 .env.production.local
+.env.example
 
 # Contentlayer
 .contentlayer
-*.Identifier
+
+#custom .gitignore will tidy up later
+.yarnrc.yml
+next-env.d.ts
+package-lock.json
+prettier.config.js
+postcss.config.js
+yarn.lock
+.vscode/*
+
+.husky/*
+
+.yarn/*
+
