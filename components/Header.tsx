@@ -12,15 +12,15 @@ import SearchButton from './SearchButton'
 import ThemeSwitch from './ThemeSwitch'
 
 const Header = () => {
-
   const [isScrolled, setIsScrolled] = useState(false)
 
   return (
     <header className="fixed inset-x-0 top-4 z-40 flex h-[60px] justify-center">
-      <div className={cn(
-      'mx-6 w-full max-w-[375px] items-center justify-between rounded-3xl border border-border bg-secondary px-4 shadow-sm saturate-100 backdrop-blur-[10px] sm:max-w-screen-sm xl:max-w-screen-xl',
-      isScrolled && 'border-transparent bg-background/80'
-      )}>
+      <div
+        className={cn(
+          'mx-6 w-full max-w-[375px] items-center justify-between rounded-3xl border border-border bg-secondary px-4 shadow-sm saturate-100 backdrop-blur-[10px] sm:max-w-screen-sm xl:max-w-screen-xl',
+          isScrolled && 'border-transparent bg-background/80'
+        )}>
         <div className="mx-auto flex h-[60px] w-full items-center justify-between">
           <div>
             <Link href="/" aira-label={siteMetadata.headerTitle}>
@@ -32,15 +32,14 @@ const Header = () => {
                 height="40"
                 title="Logo"
               />
-            </div>
+              </div>
             </Link>
           </div>
           <div className="flex items-center sm:space-x-3">
             <ul className="hidden space-x-2 sm:flex">
               {headerNavLinks.map((link, i) => (
-                <li key={i}>
-                  
-                </li>
+                <li key={i}
+                />
               ))}
             </ul>
           </div>
