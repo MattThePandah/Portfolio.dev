@@ -71,6 +71,30 @@ module.exports = () => {
           protocol: 'https',
           hostname: 'picsum.photos',
         },
+        {
+          protocol: 'https',
+          hostname: 'randomfox.ca',
+        },
+        {
+          protocol: 'https',
+          hostname: 'images.dog.ceo',
+        },
+        {
+          protocol: 'https',
+          hostname: 'bunnies.media'
+        },
+        {
+          protocol: 'https',
+          hostname: 'cdn.nekos.life'
+        },
+        {
+          protocol: 'https',
+          hostname: 'i.some-random-api.ml'
+        },
+        {
+          protocol: 'https',
+          hostname: 'i.imgur.com'
+        }
       ],
     },
     async headers() {
